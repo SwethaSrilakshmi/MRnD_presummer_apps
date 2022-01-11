@@ -60,7 +60,7 @@ def send_report(clg_name):
         mycursor.execute(student_scores)
         student_scores = mycursor.fetchall()
 
-        send_email("blackjackal982@gmail.com",clg_name,student_scores,clg_summary,global_summary)
+        send_email("testmail@gmail.com",clg_name,student_scores,clg_summary,global_summary)
 
     except Error as e:
         click.echo(e)
